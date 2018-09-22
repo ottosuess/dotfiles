@@ -4,9 +4,6 @@
 # Add bash-completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
-# ~/.extra can be used for other settings you don’t want to commit.
-[ -f ~/.extra ] && . ~/.extra
-
 # Add z
 . ~/.z.sh
 
@@ -152,3 +149,6 @@ if [ ! -z "$SSH_TTY" ]; then
     fi
     export SSH_AUTH_SOCK="$HOME/.ssh/agent_sock"
 fi
+
+# ~/.extra can be used for other settings you don’t want to commit.
+[ -f ~/.extra ] && . ~/.extra
